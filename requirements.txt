@@ -3,7 +3,6 @@ charset-normalizer==2.0.12
 html2text==2020.1.16
 idna==3.3
 imap-tools==0.56.0
-pkg-resources==0.0.0
 pyTelegramBotAPI==4.7.0
 requests==2.27.1
 telebot==0.0.4
