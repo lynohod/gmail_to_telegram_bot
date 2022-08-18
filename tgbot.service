@@ -1,0 +1,20 @@
+sudo nano /etc/systemd/system/bot.service
+
+
+[Unit]
+Description=gmail to tg bot
+After=multi-user.target
+ 
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/muzychenko/bot/gmail_to_telegram/bot.py
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
+
+
+
+sudo systemctl daemon-reload
+sudo systemctl enable bot.service
+sudo systemctl start bot.service
