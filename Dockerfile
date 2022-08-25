@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt clear && \
     apt update -y
-RUN apt install python3 python3-pip -y &&
+RUN apt install python3 python3-pip -y && \
     rm -rf /var/lib/apt/lists/*
 RUN pip3 install pyTelegramBotAPI
 
